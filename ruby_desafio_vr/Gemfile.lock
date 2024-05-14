@@ -1,0 +1,147 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.6)
+      public_suffix (>= 2.0.2, < 6.0)
+    bigdecimal (3.1.8)
+    builder (3.2.4)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (>= 2.0, < 4.0)
+    capybara-screenshot (1.0.26)
+      capybara (>= 1.0, < 4)
+      launchy
+    childprocess (3.0.0)
+    coderay (1.1.3)
+    colorize (1.1.0)
+    concurrent-ruby (1.2.3)
+    csv (3.3.0)
+    cucumber (9.2.0)
+      builder (~> 3.2)
+      cucumber-ci-environment (> 9, < 11)
+      cucumber-core (> 13, < 14)
+      cucumber-cucumber-expressions (~> 17.0)
+      cucumber-gherkin (> 24, < 28)
+      cucumber-html-formatter (> 20.3, < 22)
+      cucumber-messages (> 19, < 25)
+      diff-lcs (~> 1.5)
+      mini_mime (~> 1.1)
+      multi_test (~> 1.1)
+      sys-uname (~> 1.2)
+    cucumber-ci-environment (10.0.1)
+    cucumber-core (13.0.2)
+      cucumber-gherkin (>= 27, < 28)
+      cucumber-messages (>= 20, < 23)
+      cucumber-tag-expressions (> 5, < 7)
+    cucumber-cucumber-expressions (17.1.0)
+      bigdecimal
+    cucumber-gherkin (27.0.0)
+      cucumber-messages (>= 19.1.4, < 23)
+    cucumber-html-formatter (21.3.1)
+      cucumber-messages (> 19, < 25)
+    cucumber-messages (22.0.0)
+    cucumber-tag-expressions (6.1.0)
+    data_magic (1.2)
+      faker (>= 1.1.2)
+      yml_reader (>= 0.6)
+    diff-lcs (1.5.1)
+    faker (3.3.1)
+      i18n (>= 1.8.11, < 2)
+    ffi (1.16.3-x64-mingw32)
+    httparty (0.22.0)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    i18n (1.14.5)
+      concurrent-ruby (~> 1.0)
+    launchy (2.5.2)
+      addressable (~> 2.8)
+    method_source (1.1.0)
+    mini_mime (1.1.5)
+    multi_test (1.1.0)
+    multi_xml (0.6.0)
+    nokogiri (1.16.5-x64-mingw32)
+      racc (~> 1.4)
+    page-object (2.3.1)
+      page_navigation (>= 0.10)
+      watir (>= 6.10.3)
+    page_navigation (0.10)
+      data_magic (>= 0.22)
+    parallel (1.24.0)
+    parallel_tests (4.7.1)
+      parallel
+    pry (0.14.2)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    public_suffix (5.0.5)
+    racc (1.7.3)
+    rack (3.0.11)
+    rack-test (2.1.0)
+      rack (>= 1.3)
+    rake (13.2.1)
+    regexp_parser (2.9.1)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.1)
+    ruby-oci8 (2.2.12-x64-mingw32)
+    rubyzip (1.3.0)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
+    site_prism (2.11)
+      addressable (~> 2.4)
+      capybara (~> 2.7)
+    syntax (1.2.2)
+    sys-uname (1.2.3)
+      ffi (~> 1.1)
+    watir (6.19.1)
+      regexp_parser (>= 1.2, < 3)
+      selenium-webdriver (>= 3.142.7)
+    watir-webdriver (0.9.9)
+      selenium-webdriver (>= 2.46.2)
+    webdrivers (3.9.4)
+      nokogiri (~> 1.6)
+      rubyzip (~> 1.0)
+      selenium-webdriver (~> 3.0)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
+    yml_reader (0.7)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  capybara
+  capybara-screenshot
+  colorize
+  cucumber
+  data_magic
+  httparty
+  page-object (~> 2.0)
+  parallel_tests
+  pry
+  rake
+  rspec
+  ruby-oci8
+  selenium-webdriver
+  site_prism (= 2.11)
+  syntax
+  watir-webdriver (~> 0.9.9)
+  webdrivers (~> 3.0)
+
+BUNDLED WITH
+   2.5.10
