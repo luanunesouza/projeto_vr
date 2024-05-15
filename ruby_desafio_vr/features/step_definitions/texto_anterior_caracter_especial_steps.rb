@@ -1,27 +1,19 @@
 Dado('a string de entrada {string}') do |frase|
-  puts "Frase Completa: #{frase}"
   @frase_completa = frase
-
 end
 
-Dado('os marcadores {string} e {string}') do |marcador_1, marcador_2|
-  marcadores = [[marcador_1, marcador_2]]
-
-#  marcadores[0][0] = marcador_1
-#  marcadores[0][0] = marcador_2
-end
+Dado('os marcadores {string}') do |marcadores|
+  @marcadores = marcadores.split(' ')
+  end
 
 Então('a saída esperada é: {string}') do |frase_1|
-  if @frase_completa.include?(marcadores[0][0])
-    @frase_completa.split(marcadores[0][0])
-    @frase_completa[0]
-    assert_includes(@frase_completa[0], frase_1)
-  else if @frase_completa.include?(marcadores[0][1])
-      @frase_completa.split(marcadores[0][1])
-      @frase_completa[0]
-      assert_includes(@frase_completa[0], frase_1)
-    else
-      raise "A frase não contém nenhum dos marcadores"
+  @marcadores.each do |marcador|
+    if @frase_completa.include?(marcador)
+      puts "A frase #{@frase_completa} contém o marcador #{marcador}."
+      frase_split = @frase_completa.split(marcador)
+      puts "O primeiro trecho da frase anterior ao marcador #{marcador} é: #{frase_split[0]}"
+      expect(frase_split[0].rstrip).to eq(frase_1)
+      break
     end
   end
 end

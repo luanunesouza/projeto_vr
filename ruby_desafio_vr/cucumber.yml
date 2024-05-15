@@ -1,1 +1,5 @@
-default: --no-source --color --format pretty
+#default: --no-source --color --format pretty
+
+#Perfis Execução Navegadores e Headless
+chrome: BROWSER=chrome
+headless: BROWSER=headless
