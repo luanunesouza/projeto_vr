@@ -1,14 +1,19 @@
 describe('Projeto VR - Luan', () => {
   beforeEach(() => {
+
+//    cy.visit('/')
+
     // Configuração para lidar com exceções não capturadas
     Cypress.on('uncaught:exception', (err, runnable) => {
       return false
+      
     })
   })
 
   it('Incluir produtos no carrinho', () => {
-//    cy.visit('www.vr.com.br')
+        
 //    cy.contains('Compre online').click()
+
     cy.visit('https://loja.vr.com.br/')
 
     //fechar os popups

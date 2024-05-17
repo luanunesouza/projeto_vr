@@ -3,9 +3,8 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      {
-        baseUrl: "www.vr.com.br"
-      }
+
     },
+    "baseUrl": "https://www.vr.com.br/"
   },
 });
